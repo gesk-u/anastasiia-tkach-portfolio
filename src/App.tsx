@@ -1,4 +1,5 @@
 import './App.css';
+import Profile from './components/Profile.tsx';
 //import { useState } from 'react';
 //import { filters, projects, skills } from './content'
 //import type { Filter, Skill } from './content'
@@ -31,7 +32,7 @@ function App() {
       <section className="hero" id="top">
         <div className="hero-grid" aria-hidden="true" />
         <div className="hero-copy">
-          <div className="eyebrow"><span>[ ENGINEER / DEVELOPER/ MACHINE LEARNING ]</span><span>SYS.{new Date().getFullYear()}.</span></div>
+          <div className="eyebrow"><span>[ ENGINEER / DEVELOPER/ ML ]</span><span>SYS.{new Date().getFullYear()}.</span></div>
           <h1><span>Anastasiia</span><span className="outline">Tkach</span></h1>
           <p className="hero-intro">
             Full-stack developer based in Finland. I care about <strong>clean code</strong>,{' '}
@@ -50,6 +51,10 @@ function App() {
           <span>SEE MY WORK ↓</span>
         </div>
       </section>
+
+      <Profile />
+
+
 
 
     </main>
