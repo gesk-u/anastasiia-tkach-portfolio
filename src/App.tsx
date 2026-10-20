@@ -1,14 +1,14 @@
 import './App.css';
 import Profile from './components/Profile.tsx';
+import Skills from './components/Skills.tsx'
+import Mark from './components/Mark.tsx';
+import Projects from './components/Projects.tsx';
 //import { useState } from 'react';
 //import { filters, projects, skills } from './content'
 //import type { Filter, Skill } from './content'
 
 
 function App() {
-  //const [activeSkill, setActiveSkill] = useState<Skill>(skills[0])
-  //const [filter, setFilter] = useState<Filter>('ALL')
-  ///const visibleSkills = skills.filter((s) => filter === 'ALL' || (filter === 'CORE' ? s.core : s.cat === filter))
   //const [openProject, setOpenProject] = useState(0)
 
 
@@ -17,10 +17,7 @@ function App() {
       <div className="noise" aria-hidden="true" />
       
       <header className="site-header">
-        <a href="#top" className="brand" aria-label="Back to top">
-          <span className="brand-mark" aria-hidden="true">AT</span>
-          <span>ANASTASIIA.TKACH<span className="cursor">_</span></span>
-        </a>
+        <Mark />
         <nav aria-label="Primary navigation">
           <a href="#profile">01_PROFILE</a>
           <a href="#skills">02_STACK</a>
@@ -53,6 +50,8 @@ function App() {
       </section>
 
       <Profile />
+      <Skills />
+      <Projects />
 
 
 
