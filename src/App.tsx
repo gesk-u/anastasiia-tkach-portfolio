@@ -3,6 +3,8 @@ import Profile from './components/Profile.tsx';
 import Skills from './components/Skills.tsx'
 import Mark from './components/Mark.tsx';
 import Projects from './components/Projects.tsx';
+import Footer from './components/Footer.tsx';
+import PortraitEditor from './components/PortraitEditor.tsx';
 //import { useState } from 'react';
 //import { filters, projects, skills } from './content'
 //import type { Filter, Skill } from './content'
@@ -32,8 +34,8 @@ function App() {
           <div className="eyebrow"><span>[ ENGINEER / DEVELOPER/ ML ]</span><span>SYS.{new Date().getFullYear()}.</span></div>
           <h1><span>Anastasiia</span><span className="outline">Tkach</span></h1>
           <p className="hero-intro">
-            Full-stack developer based in Finland. I care about <strong>clean code</strong>,{' '}
-            <strong>accessible interfaces</strong> and tools people actually use.
+            Full-stack developer based in Finland. I care about clean code,{' '}
+            accessible interfaces and tools people actually use.
           </p>
           <div className="hero-actions">
             <a className="button primary" href="#work">VIEW PROJECTS <span>↘</span></a>
@@ -41,7 +43,7 @@ function App() {
           </div>
         </div>
         <div className="portrait-wrap">
-          <></>
+          <PortraitEditor />
         </div>
         <div className="hero-footer">
           <span>BASED IN FINLAND / AVAILABLE WORLDWIDE</span>
@@ -52,6 +54,7 @@ function App() {
       <Profile />
       <Skills />
       <Projects />
+      <Footer />
 
 
 
