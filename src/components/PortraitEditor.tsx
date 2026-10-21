@@ -126,7 +126,7 @@ export default function PortrainEditor() {
             <span>B</span>uilt in the <span>D</span>ark, <span>S</span>hipped in{" "}
             <span>L</span>ight.
           </p>
-          <span className="canvas-coords">52.5200° N / 13.4050° E</span>
+          <span className="canvas-coords">60.1695° N / 24.9354° E</span>
         </div>
         <aside className="editor-inspector">
           <div className="insp-head">

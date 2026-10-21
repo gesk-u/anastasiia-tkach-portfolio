@@ -37,17 +37,26 @@ export default function Profile() {
             <div className="identity-card">
                 <div><span>NAME</span><b>ANASTASIIA TKACH</b></div>
                 <div><span>ROLE</span><b>FULL-STACK DEVELOPER</b></div>
-                <div><span>AVAILABILITY</span><b className="green">INTERNSHIP FROM [MONTH YEAR]</b></div>
+                <div><span>AVAILABILITY</span><b className="green">INTERNSHIP FROM NOW</b></div>
                 <div><span>LANGUAGES</span><b>LANGUAGES	UA / EN / FI (B1)</b></div>
             </div>
             <nav className="profile-links" aria-label="Profile links">
-                <a href="#top">
+                <a 
+                  href="https://github.com/gesk-u"
+                  target="_blank">
                 GITHUB <span>↗</span>
                 </a>
-                <a href="#top">
+                <a 
+                  href="https://www.linkedin.com/in/anastasiia-tkach-bb8377397/"
+                  target="_blank"
+                  >
                 LINKEDIN <span>↗</span>
                 </a>
-                <a href="#contact">
+                <a 
+                href={`${import.meta.env.BASE_URL}anastasiia_cv.html`}
+                target="_blank"
+                rel="noopener noreferrer"
+                >
                 CV <span>↓</span>
                 </a>
           </nav>
