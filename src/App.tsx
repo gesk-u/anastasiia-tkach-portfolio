@@ -31,7 +31,7 @@ function App() {
       <section className="hero" id="top">
         <div className="hero-grid" aria-hidden="true" />
         <div className="hero-copy">
-          <div className="eyebrow"><span>[ ENGINEER / DEVELOPER/ ML ]</span><span>SYS.{new Date().getFullYear()}.</span></div>
+          <div className="eyebrow"><span>[ ENGINEER / DEVELOPER / ML ]</span><span>SYS.{new Date().getFullYear()}.</span></div>
           <h1><span>Anastasiia</span><span className="outline">Tkach</span></h1>
           <p className="hero-intro">
             Full-stack developer based in Finland. I care about clean code,{' '}
