@@ -11,7 +11,7 @@ export default function Projects() {
           <span>03</span>
           <span>/SELECTED_OPERATIONS</span>
         </div>
-        <h2 style={{ whiteSpace: 'nowrap' }}>
+        <h2>
           Projects <i>on file.</i>
         </h2>
       </div>

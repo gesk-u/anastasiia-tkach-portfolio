@@ -179,6 +179,7 @@ main { overflow: hidden; position: relative; }
 .work { background: #0d0c12; color: var(--ink); }
 .work .section-index { color: var(--muted); }.work .section-index span:first-child { color: var(--red); }
 .work-heading { grid-template-columns: 25% 1fr; }
+.work-heading h2 { white-space: nowrap; }
 .work-heading h2 i { color: var(--red); font-family: 'Chakra Petch', sans-serif; font-weight: 400; font-style: italic; letter-spacing: -.055em; }
 .project { border-top: 1px solid var(--line); }
 .project:last-child { border-bottom: 1px solid var(--line); }
@@ -234,6 +235,16 @@ footer > p i { color: var(--red); font-family: 'Chakra Petch', sans-serif; text-
   .experience-title { margin: 25px 0; }
 }
 
+@media (max-width: 720px) {
+  .browser-columns { display: none; }
+  .skill-cell { grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "head foot" "name name" "meter meter"; gap: 10px 12px; padding: 12px; }
+  .module-header { grid-area: head; flex-direction: row; align-items: center; gap: 12px; font-size: 14px; }
+  .skill-cell strong { grid-area: name; font-size: 18px; }
+  .skill-cell small { display: none; }
+  .module-meter { grid-area: meter; }
+  .module-footer { grid-area: foot; flex-direction: row; align-items: center; gap: 10px; font-size: 14px; }
+}
+
 @media (max-width: 600px) {
   .site-header { height: 58px; padding: 0 5vw; }
   .hero { padding-top: 58px; }
@@ -254,11 +265,7 @@ footer > p i { color: var(--red); font-family: 'Chakra Petch', sans-serif; text-
   .skills-heading { gap: 18px; }
   .module-title { display: block; }
   .module-title > span { display: inline-block; margin-top: 14px; }
-  .browser-columns { grid-template-columns: 72px minmax(0, 1fr) 75px; }
-  .browser-columns span:nth-child(3), .browser-columns span:nth-child(5) { display: none; }
-  .skill-cell { grid-template-columns: 72px minmax(0, 1fr) 75px; padding: 0 9px; }
-  .skill-cell small, .module-footer { display: none; }
-  .skill-cell > * { min-width: 0; overflow-wrap: anywhere; }
+  .work-heading h2 { white-space: normal; }
   .browser-bar { grid-template-columns: 1fr auto; }
   .browser-bar > span { display: none; }
   .project > button { min-height: 84px; grid-template-columns: 70px 1fr 32px; }
