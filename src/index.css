@@ -60,7 +60,8 @@ main { overflow: hidden; position: relative; }
   z-index: 1;
   container-type: inline-size; /* children can now size themselves to this column */
 }
-.eyebrow { display: flex; width: min(600px, 92%); justify-content: space-between; gap: 16px; color: var(--acid); font-size: 18px; letter-spacing: .1em; }
+.eyebrow { display: flex; flex-wrap: wrap; width: min(600px, 92%); justify-content: space-between; gap: 6px 16px; color: var(--acid); font-size: 18px; letter-spacing: .1em; }
+.eyebrow span { white-space: nowrap; }
 .hero h1 {
   font-family: 'Silkscreen', monospace;
   font-size: clamp(44px, 14cqi, 184px); /* 14% of the column width instead of 11.2% of the screen */
@@ -250,7 +251,7 @@ footer > p i { color: var(--red); font-family: 'Chakra Petch', sans-serif; text-
   .hero { padding-top: 58px; }
   .hero-grid { top: 58px; background-size: 20vw 20vw; }
   .hero-copy { padding-top: 8vh; }
-  .eyebrow { width: 100%; }
+  .eyebrow { width: 100%; font-size: 14px; }
   .hero h1 { margin-top: 6vh; }
   .hero-intro { width: 100%; font-size: 28px; }
   .portrait-wrap { min-height: 440px; }
