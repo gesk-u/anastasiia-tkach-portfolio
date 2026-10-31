@@ -17,9 +17,9 @@ export default function Footer() {
         <div className="footer-bottom">
           <span>© {new Date().getFullYear()} ANASTASIIA TKACH</span>
           <div>
-            <a href="#top">GITHUB</a>
-            <a href="#top">LINKEDIN</a>
-            <a href="#top">CV</a>
+            <a href="https://github.com/gesk-u" target="_blank" rel="noopener noreferrer">GITHUB</a>
+            <a href="https://www.linkedin.com/in/anastasiia-tkach-bb8377397/" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
+            <a href={`${import.meta.env.BASE_URL}anastasiia_cv.html`} target="_blank" rel="noopener noreferrer">CV</a>
           </div>
           <a href="#top">RETURN TO ROOT ↑</a>
         </div>
