@@ -71,7 +71,9 @@ export const projects: Project[] = [
     year: '2026',
     summary: 'Tech news from many outlets in one live feed, with duplicate stories grouped by embeddings and a recommender that learns your interests from how you read.',
     stack: ['Next.js', 'TypeScript', 'Python', 'FastAPI', 'PostgreSQL', 'pgvector', 'scikit-learn', 'AWS'],
-    status: 'IN DEVELOPMENT',
+    status: 'DEPLOYED',
+    url: 'https://chorus.anastasiia.dev',
+    image: '/projects/chorus.png',
   },
   {
     id: 'CASE_003',
