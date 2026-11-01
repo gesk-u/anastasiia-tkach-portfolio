@@ -18,7 +18,7 @@ export type Project = {
   year: string
   summary: string
   stack: string[]
-  status: 'IN DEVELOPMENT' | 'DEPLOYED' | 'ARCHIVED'
+  status: 'IN DEVELOPMENT' | 'DEPLOYED' | 'DEPLOYED · IN DEVELOPMENT' | 'ARCHIVED'
   url?: string
   image?: string
 }
@@ -60,7 +60,7 @@ export const projects: Project[] = [
     year: '2026',
     summary: 'React components such as combobox, dialog, tabs and date picker, built to the WAI-ARIA patterns and documented in Storybook.',
     stack: ['React', 'TypeScript', 'Storybook', 'Vitest', 'Playwright', 'axe-core', 'npm', 'GitHub Actions'],
-    status: 'DEPLOYED',
+    status: 'DEPLOYED · IN DEVELOPMENT',
     url: 'https://lilacui.anastasiia.dev',
     image: '/projects/lilac-ui.png',
   },
@@ -71,7 +71,7 @@ export const projects: Project[] = [
     year: '2026',
     summary: 'Tech news from many outlets in one live feed, with duplicate stories grouped by embeddings and a recommender that learns your interests from how you read.',
     stack: ['Next.js', 'TypeScript', 'Python', 'FastAPI', 'PostgreSQL', 'pgvector', 'scikit-learn', 'AWS'],
-    status: 'DEPLOYED',
+    status: 'DEPLOYED · IN DEVELOPMENT',
     url: 'https://chorus.anastasiia.dev',
     image: '/projects/chorus.png',
   },
