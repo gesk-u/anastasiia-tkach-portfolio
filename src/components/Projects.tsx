@@ -37,8 +37,10 @@ export default function Projects() {
               </button>
 
               <div className="project-detail">
-                <div className={`project-visual visual-${index + 1}`}>
-                  <span>{project.id}</span>
+                <div className={`project-visual visual-${index + 1}${project.image ? ' has-image' : ''}`}>
+                  {project.image && (
+                    <img src={project.image} alt={`${project.title} website screenshot`} loading="lazy" />
+                  )}
                 </div>
                 <div className="project-info">
                   <span className="status">STATUS: {project.status}</span>
@@ -48,7 +50,10 @@ export default function Projects() {
                       <span key={item}>{item}</span>
                     ))}
                   </div>
-                  <a href="#contact">
+                  <a
+                    href={project.url ?? '#contact'}
+                    {...(project.url ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                  >
                     OPEN FILE <span aria-hidden="true">↗</span>
                   </a>
                 </div>

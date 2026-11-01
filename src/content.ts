@@ -19,6 +19,8 @@ export type Project = {
   summary: string
   stack: string[]
   status: 'IN DEVELOPMENT' | 'DEPLOYED' | 'ARCHIVED'
+  url?: string
+  image?: string
 }
 
 
@@ -58,7 +60,9 @@ export const projects: Project[] = [
     year: '2026',
     summary: 'React components such as combobox, dialog, tabs and date picker, built to the WAI-ARIA patterns and documented in Storybook.',
     stack: ['React', 'TypeScript', 'Storybook', 'Vitest', 'Playwright', 'axe-core', 'npm', 'GitHub Actions'],
-    status: 'IN DEVELOPMENT',
+    status: 'DEPLOYED',
+    url: 'https://lilacui.anastasiia.dev',
+    image: '/projects/lilac-ui.png',
   },
   {
     id: 'CASE_002',

@@ -189,12 +189,14 @@ main { overflow: hidden; position: relative; }
 .project-name { font: 600 clamp(22px, 3vw, 48px) 'Chakra Petch', sans-serif; letter-spacing: -.05em; }
 .project-toggle { font-size: 39px; font-weight: 300; }
 .project-detail { max-height: 0; overflow: hidden; display: grid; grid-template-columns: 1.4fr 1fr; gap: 4vw; transition: max-height .5s ease, padding .5s ease; }
-.project.open .project-detail { max-height: 540px; padding: 12px 0 48px 13%; }
+.project.open .project-detail { max-height: 900px; padding: 12px 0 48px 13%; }
 .project-visual { min-height: 310px; position: relative; display: grid; place-items: center; background-color: #111; color: var(--acid); overflow: hidden; }
 .project-visual::before { content: ''; position: absolute; inset: 0; background-image: radial-gradient(currentColor .8px, transparent .8px); background-size: 5px 5px; opacity: .3; }
 .project-visual::after { content: ''; position: absolute; width: 48%; aspect-ratio: 1; border: 30px solid currentColor; border-radius: 50%; filter: blur(.5px); }
 .project-visual .mark { width: 110px; height: 110px; z-index: 1; stroke-width: .5; }
-.project-visual > span { position: absolute; top: 14px; left: 14px; font-size: 16px; }
+.project-visual.has-image::before, .project-visual.has-image::after { content: none; }
+.project-visual.has-image { min-height: 0; display: block; align-self: start; }
+.project-visual > img { display: block; width: 100%; height: auto; }
 .visual-2 { color: #ff4a3d; }.visual-2::after { border-radius: 0; transform: rotate(45deg); }
 .visual-3 { color: #b899ff; }.visual-3::after { width: 60%; border-width: 1px; box-shadow: inset 0 0 0 40px #111, inset 0 0 0 42px currentColor; }
 .project-info { padding-right: 5vw; align-self: center; }
@@ -273,8 +275,8 @@ footer > p i { color: var(--red); font-family: 'Chakra Petch', sans-serif; text-
   .project-type, .project-year { display: none; }
   .project-name { font-size: 26px; }
   .project-detail { grid-template-columns: 1fr; }
-  .project.open .project-detail { max-height: 760px; padding-left: 0; }
-  .project-visual { min-height: 240px; }
+  .project.open .project-detail { max-height: 1200px; padding-left: 0; }
+  .project-visual:not(.has-image) { min-height: 240px; }
   .project-info { padding: 0 0 10px; }
   .timeline article { grid-template-columns: 80px 1fr; gap: 15px; padding-left: 22px; }
   .timeline article > p { grid-column: 2; }
